@@ -13,3 +13,4 @@ openFile.pack()
 
 root.mainloop()
 
+print("Roboczo")
