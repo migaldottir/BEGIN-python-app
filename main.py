@@ -12,5 +12,3 @@ openFile = tk.Button(root, text="Open File", padx=10, pady=5, fg="white", bg="#2
 openFile.pack()
 
 root.mainloop()
-
-print("Roboczo")
