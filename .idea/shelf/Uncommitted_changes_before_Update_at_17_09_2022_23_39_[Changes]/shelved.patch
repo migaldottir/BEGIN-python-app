@@ -1,0 +1,24 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import tkinter as tk\r\nfrom tkinter import filedialog, Text\r\nimport os\r\nroot = tk.Tk()\r\ncanvas = tk.Canvas(root, height=600, width=600, bg=\"#263D42\")\r\ncanvas.pack()\r\nframe = tk.Frame(root, bg=\"blue\")\r\nframe.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)\r\n\r\nopenFile = tk.Button(root, text=\"Open File\", padx=10, pady=5, fg=\"white\", bg=\"#263D42\")\r\n\r\nopenFile.pack()\r\n\r\nroot.mainloop()\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 8a8f606e7e3538f51429a9e77662e3c5f437dcf9)
++++ b/main.py	(date 1663450749248)
+@@ -6,10 +6,13 @@
+ canvas.pack()
+ frame = tk.Frame(root, bg="blue")
+ frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
++<<<<<<< HEAD
+ 
+ openFile = tk.Button(root, text="Open File", padx=10, pady=5, fg="white", bg="#263D42")
+ 
+ openFile.pack()
++=======
++>>>>>>> origin/master
+ 
+ root.mainloop()
+ 
