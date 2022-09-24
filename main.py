@@ -7,6 +7,7 @@ def addApp():
 
     for widget in frame.winfo_children():
         widget.destroy()
+        #widget is giving us access to everything attached to the frame
     filename = filedialog.askopenfilename(initialdir="/", title="Select File",
                                           filetypes=(("executables", "*.exe"), ("all files", "*.*")))
     apps.append(filename)
@@ -15,9 +16,13 @@ def addApp():
         label = tk.Label(frame, text=app, bg="grey")
         label.pack()
 
+def runApps():
+    for app in apps:
+        os.startfile(app)
+
 canvas = tk.Canvas(root, height=700, width=700, bg="#263D42")
 canvas.pack()
-frame = tk.Frame(root, bg="blue")
+frame = tk.Frame(root, bg="goldenrod")
 frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
 
 openFile = tk.Button(root, text="Open File", padx=10,
@@ -25,7 +30,9 @@ openFile = tk.Button(root, text="Open File", padx=10,
 
 openFile.pack()
 
-runApps = tk.Button(root, text="Run Apps", padx=10, pady=5, fg="white", bg="#263D42")
+runApps = tk.Button(root, text="Run Apps", padx=10, pady=5, fg="white", bg="#263D42", command=runApps)
 runApps.pack()
 
 root.mainloop()
+
+
