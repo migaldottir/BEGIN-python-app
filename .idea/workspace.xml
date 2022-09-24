@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8894df05-18ba-4dfb-aa48-9f07803bd89f" name="Changes" comment="added a button - coloured it and set its size">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/save.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
